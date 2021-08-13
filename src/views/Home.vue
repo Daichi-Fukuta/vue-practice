@@ -1,6 +1,16 @@
 <template>
     <div>
         <h3>Home</h3>
-        <a href="/users">Usersへ</a>
+        <button @click="toUsers">Usersへ</button>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        toUsers() {
+            this.$router.push('users');
+        }
+    }
+}
+</script>
